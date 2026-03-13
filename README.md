@@ -59,3 +59,9 @@ All models share:
   - Pretrained ImageNet weights, last blocks unfrozen for fine‑tuning.  
   - Global average pooling + a small dense head with batch norm, dropout, and an output `softmax` neuron.  
   - Loss: `categorical_crossentropy`, optimizer: Adam.
+
+
+### Score-CAM analysis: 
+Each model includes a Score-CAM analysis to see in which features each model in both binary and multiclass classification focusses on. 
+In addition to this, we also checked the heatmaps into cumulative “long-tail” curves of activation 
+mass vs. pixel fraction by sorting CAM intensities (file: 'long_tail.py'). 

@@ -53,33 +53,9 @@ All models share:
   - Global average pooling + a small dense head with batch norm, dropout, and an output `sigmoid` neuron.  
   - Loss: `binary_crossentropy`, optimizer: Adam.
 
-**ResNet50 binary code description:**
+### Multiclass CNNs (Blocky, Granular, Platy-Lenticular)
 
-```python
-"""
-Transfer-learning ResNet50 pipeline for binary frost vs non-frost classification,
-with cross-validation, detailed misclassification logging, and custom Score-CAM
-explanations.
-
-This codes:
-1. Sets seeds, mounts Google Drive, loads and normalizes the frost/non-frost
-   image dataset, constructs a stratified train/validation/test split (saving
-   the test split for reuse), then applies data augmentation and computes class
-   weights to counteract class imbalance.
-2. Defines a ResNet50-based model (ImageNet backbone with its final blocks
-   unfrozen) followed by L2-regularized dense layers and dropout with a sigmoid
-   output for binary prediction, and runs stratified K-fold cross-validation to
-   record per-fold metrics, training curves, and confusion matrices, which are
-   saved to disk.
-3. Trains a final ResNet50 model on the full augmented training set with
-   checkpointing, learning-rate scheduling, and CSV logging, evaluates on the
-   held-out test set, reports accuracy/precision/recall/F1, and saves summary
-   metrics, cross-validation statistics, and misclassification counts to CSV,
-   alongside plots of learning curves and the final confusion matrix.
-4. Visualizes misclassified test images with true/predicted labels, confidence,
-   and error type (false positive vs false negative), exports a sorted
-   misclassification table, and implements a custom Score-CAM routine adapted
-   to ResNet50 internals to generate triplets (original, heatmap, overlay) for
-   representative correct and misclassified samples, highlighting which image
-   regions most influence the model’s decisions.
-"""
+- **MobileNetV2 / EfficientNetV2B0 / ResNet50** backbones with:
+  - Pretrained ImageNet weights, last blocks unfrozen for fine‑tuning.  
+  - Global average pooling + a small dense head with batch norm, dropout, and an output `softmax` neuron.  
+  - Loss: `categorical_crossentropy`, optimizer: Adam.

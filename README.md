@@ -13,7 +13,7 @@ Try the trained models and visual explanations in your browser:
 
 The app lets you upload images, see model predictions (CNN, BNN, MobileNetV2, EfficientNetV2B0, and ResNet50), and generate Score‑CAM and Grad-CAM heatmaps and overlays.
 
-## Project Structure (High‑Level)
+## Project Structure
 
 * **Data** (in Google Drive)
    * `frost/frost_non_frost/non_frost/` – binary class 0
@@ -115,6 +115,3 @@ skouki@ualg.pt
 ## Acknowledgments
 This work is part of the ERC Starting Grant MATRIX project (nº101041245).
 
-## Acknowledgments
-
-This work is part of the ERC Starting Grant MATRIX project (nº101041245).

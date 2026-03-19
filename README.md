@@ -114,6 +114,9 @@ See `requirements.txt` for package dependencies. Key libraries:
 * matplotlib/seaborn for visualization
 * Gradio for the interactive demo
 
+# Dataset and results
+The dataset and the results are publicly available on: https://doi.org/10.17605/OSF.IO/TYDSM 
+
 ## Contact
 For questions about statistical methodology or interpretation:
 skouki@ualg.pt

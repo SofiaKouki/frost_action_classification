@@ -6,11 +6,10 @@ Transfer‑learning pipelines for:
 
 using CNN backbones (MobileNetV2, EfficientNetV2B0, ResNet50), Bayesian neural networks (BNNs), and Score‑CAM interpretability. An interactive demo is available on Hugging Face Spaces.
 
-## 🔗 Interactive Demo
-
-Try the trained models and visual explanations in your browser:
-**[🤗 Hugging Face Spaces Demo](https://huggingface.co/spaces/YOUR_USERNAME/frost-classifier)**
-
+🔗 Interactive Demo (Hugging Face Spaces)
+Try the trained models and Score‑CAM visualizations directly in your browser:
+▶ Hugging Face Space: https://huggingface.co/spaces/skkou/frost_classifier
+Show Image
 The app lets you upload images, see model predictions (CNN, BNN, MobileNetV2, EfficientNetV2B0, and ResNet50), and generate Score‑CAM and Grad-CAM heatmaps and overlays.
 
 ## Project Structure

@@ -1,6 +1,6 @@
 # Frost & Microstructure Classification
 
-Transfer‑learning pipelines for:
+CNN-based pipelines for:
 * Binary frost vs non‑frost image classification
 * Multiclass microstructure image classification
 

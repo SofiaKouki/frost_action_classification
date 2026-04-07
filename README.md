@@ -1,7 +1,7 @@
 # Frost & Microstructure Classification
 
-[![GitHub Stars](https://img.shields.io/github/stars/USER/REPO?style=social)](https://github.com/USER/REPO)
-[![GitHub License](https://img.shields.io/github/license/USER/REPO)](https://github.com/USER/REPO/blob/main/LICENSE)
+[![OSF Project](https://img.shields.io/badge/OSF-TYDSM-0B3D91?logo=osf&logoColor=white)](https://doi.org/10.17605/OSF.IO/TYDSM)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://github.com/SofiaKouki/frost_action_classification#CC0-1.0-1-ov-file)
 [![Open in HF Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/skkou/frost_classifier)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
